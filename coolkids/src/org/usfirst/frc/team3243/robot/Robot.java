@@ -23,9 +23,11 @@ public class Robot extends IterativeRobot {
 	private static final String kCustomAuto = "My Auto";
 	private String m_autoSelected;
 	private SendableChooser<String> m_chooser = new SendableChooser<>();
-	MotorController MC = new MotorController();
-	Inputmanager IM = new Inputmanager();
-
+	MotorController MC = new MotorController(); //This is the object declaration
+	Inputmanager IM = new Inputmanager();	//This is another object declaration
+	
+	
+	
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.

@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.Joystick;
 public class Inputmanager {
 	
 	//use either xbox controller or regular PS4 joystick
-	Joystick inOne = new Joystick(0);
+	Joystick inOne = new Joystick(0);	//1st Joystick that's been declared
 	Joystick inTwo = new Joystick(0);
 	Double[] stickData = new Double[2];
 	
