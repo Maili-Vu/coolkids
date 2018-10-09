@@ -23,6 +23,8 @@ public class Robot extends IterativeRobot {
 	private static final String kCustomAuto = "My Auto";
 	private String m_autoSelected;
 	private SendableChooser<String> m_chooser = new SendableChooser<>();
+	MotorController MC = new MotorController();
+	Inputmanager IM = new Inputmanager();
 
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -75,6 +77,7 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void teleopPeriodic() {
+		MC.drive(IM.getMoveInput());
 	}
 
 	/**
