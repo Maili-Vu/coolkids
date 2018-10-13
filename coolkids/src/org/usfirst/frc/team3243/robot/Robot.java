@@ -79,7 +79,7 @@ public class Robot extends IterativeRobot {
 	 */
 	@Override
 	public void teleopPeriodic() {
-		MC.drive(IM.getMoveInput());
+		MC.drive(IM.getMoveInput()); //This is where the other two classes come in
 	}
 
 	/**
@@ -89,3 +89,6 @@ public class Robot extends IterativeRobot {
 	public void testPeriodic() {
 	}
 }
+/**
+*Testing Eclipse commit integration. This is a junk comment and may be deleted
+*/
